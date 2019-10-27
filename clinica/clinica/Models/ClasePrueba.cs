@@ -10,5 +10,6 @@ namespace clinica.Models
         public int MyProperty { get; set; }
         public int localmachine { get; set; }
         public int MyPty { get; set; }
+        public int perrote { get; set; }
     }
 }
