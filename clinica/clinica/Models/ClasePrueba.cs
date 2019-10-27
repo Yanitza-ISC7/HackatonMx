@@ -11,5 +11,6 @@ namespace clinica.Models
         public int localmachine { get; set; }
         public int MyPty { get; set; }
         public int perrote { get; set; }
+        public int perrito { get; set; }
     }
 }
