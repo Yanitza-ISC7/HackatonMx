@@ -4,10 +4,16 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Informacion</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+
+    @Html.ActionLink("Agregar Historial Medico", "Create", "HistorialMedicoes")
+    <br />
+    @Html.ActionLink("Historial Medico", "Index", "HistorialMedicoes")
+    <br />
+    @Html.ActionLink("Informacion general paciente", "Index", "Paciente")
+
 </p>
 <table class="table">
     <tr>
@@ -49,7 +55,7 @@
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.HospitalID }) |
             @Html.ActionLink("Details", "Details", new { id=item.HospitalID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.HospitalID })
+            
         </td>
     </tr>
 }
