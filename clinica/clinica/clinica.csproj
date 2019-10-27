@@ -186,6 +186,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ClasePrueba.cs" />
     <Compile Include="Models\clinicaContext.cs" />
     <Compile Include="Models\EnfermedadesCongenitas.cs" />
     <Compile Include="Models\EnfermedadesCronicas.cs" />
