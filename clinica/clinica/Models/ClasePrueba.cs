@@ -7,6 +7,6 @@ namespace clinica.Models
 {
     public class ClasePrueba
     {
-        public int ClasepruebaId { get; set; }
+        public int MyProperty { get; set; }
     }
 }
