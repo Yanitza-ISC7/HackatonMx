@@ -1,0 +1,34 @@
+﻿@model clinica.Models.Contacto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Contacto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactoEmergencia.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactoEmergencia.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Paciente.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Paciente.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ContactoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
