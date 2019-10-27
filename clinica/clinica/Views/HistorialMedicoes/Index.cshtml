@@ -4,15 +4,15 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Historial Medico</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Nuevo historial medico", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Doctor.Nombre)
+            <p>Doctor</p>
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Paciente.Nombre)
@@ -65,9 +65,9 @@
             @Html.DisplayFor(modelItem => item.FechaRealizacion)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.HistorialMedicoID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.HistorialMedicoID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.HistorialMedicoID })
+           
+            @Html.ActionLink("Detalles", "Details", new { id=item.HistorialMedicoID }) |
+
         </td>
     </tr>
 }

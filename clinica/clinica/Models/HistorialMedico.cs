@@ -26,12 +26,10 @@ namespace clinica.Models
         public string ExamenMedico { get; set; }
 
         [Required(ErrorMessage = " Peso es requerido")]
-        [RegularExpression(@"^\d+\.\d{0,2}$")]
-        [Range(0, 999.99)]
+        [Range(0.00, 999.99)]
         public decimal Peso { get; set; }
 
         [Required(ErrorMessage = " Altura es requerido")]
-        [RegularExpression(@"^\d+\.\d{0,2}$")]
         [Range(0, 999.99)]
         public decimal Altura { get; set; }
 
@@ -41,11 +39,11 @@ namespace clinica.Models
         [DataType(DataType.Date)]
         public DateTime FechaRealizacion { get; set; }
 
-        [DisplayName("Datos paciente")]
+        [DisplayName("Paciente")]
         public int PacienteID { get; set; }
         public virtual Paciente Paciente { get; set; }
 
-        [DisplayName("Datos doctor")]
+        [DisplayName("Doctor")]
         public int DoctorID { get; set; }
         public virtual Doctor Doctor { get; set; }
 

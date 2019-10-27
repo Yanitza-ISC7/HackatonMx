@@ -10,6 +10,7 @@ namespace clinica.Models
     public class Paciente
     {
         public int PacienteID{ get; set; }
+        [DisplayName("Paciente")]
         [Required(ErrorMessage = " Nombre es requerido.")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Nombre debe tener 3 caracteres minimo")]
         [DataType(DataType.Text)]

@@ -1,5 +1,7 @@
 ﻿@model clinica.Models.HistorialMedico
 
+
+
 @{
     ViewBag.Title = "Details";
 }
@@ -11,12 +13,22 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Doctor.Nombre)
+           <p>Doctor</p>
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Doctor.Nombre)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Doctor.CedulaProfesional)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doctor.CedulaProfesional)
+        </dd>
+
+       
+
 
         <dt>
             @Html.DisplayNameFor(model => model.Paciente.Nombre)

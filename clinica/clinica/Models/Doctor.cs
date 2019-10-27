@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,7 @@ namespace clinica.Models
     {
         public int DoctorID { get; set; }
 
+        
         [Required(ErrorMessage = " Nombre es requerido.")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Nombre debe tener 3 caracteres minimo")]
         [DataType(DataType.Text)]
